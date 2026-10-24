@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Ghost · 古斯特</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <script src="/static/app.js" defer></script>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div class="identity"><span class="mark" aria-hidden="true">G</span><div><h1>Ghost <span>古斯特</span></h1><p>给日常，留一点对话的空间。</p></div></div>
+      <button id="clear" class="secondary" type="button">新对话</button>
+    </header>
+    <div class="connection"><span id="dot" class="dot"></span><span id="status" role="status">正在检查连接配置…</span></div>
+    <section id="conversation" class="conversation" aria-label="聊天记录" aria-live="polite" aria-relevant="additions">
+      <div id="welcome" class="welcome"><span class="eyebrow">A MOMENT FOR YOU</span><h2>今天，想从哪里聊起？</h2><p>分享一件小事，整理一个念头，<br>或只是来打个招呼。</p></div>
+    </section>
+    <p id="feedback" class="feedback" role="status"></p>
+    <form id="composer">
+      <label class="sr-only" for="message">给 Ghost 发消息</label>
+      <textarea id="message" rows="2" maxlength="4000" placeholder="说说你此刻的想法…" required disabled></textarea>
+      <button id="send" type="submit" disabled>发送 <span aria-hidden="true">↗</span></button>
+    </form>
+    <footer>Ghost 是 AI。此版本仅保留当前页面的对话；发送时，最近的对话会交由 OpenAI 处理。</footer>
+  </main>
+</body>
+</html>
