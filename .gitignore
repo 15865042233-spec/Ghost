@@ -1,0 +1,17 @@
+# Local temporary files and caches
+.tmp/
+.cache/
+__pycache__/
+*.pyc
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# OS metadata
+Thumbs.db
+Desktop.ini
+.DS_Store
